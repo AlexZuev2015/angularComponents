@@ -1,0 +1,22 @@
+<div style="text-align:center">
+  <h1>
+    Lovely {{ title }}!
+  </h1>
+  <div class="main-image">
+  <app-second [src] = "mainImageSrc" (select) = "onMainImageClick($event)"></app-second>
+  </div>
+</div>
+<ul>
+  <li class="preview-image">
+    <app-second  [src] = "list[0]" (select)="onImageSelect($event)"></app-second>
+  </li>
+  <li class="preview-image">
+    <app-second  [src] = "list[1]" (select)="onImageSelect($event)"></app-second>
+  </li>
+  <li class="preview-image">
+    <app-second [src] = "list[2]" (select)="onImageSelect($event)"></app-second>
+  </li>
+  <li class="preview-image">
+    <app-second [src] = "list[3]" (select)="onImageSelect($event)"></app-second>
+  </li>
+</ul>
